@@ -20,4 +20,10 @@ export class CharacterService {
       `${this.apiUrl}characters?limit=${this.limit}&apikey=${this.apiKey}`
     );
   }
+
+  getCharacterById(id: string): Observable<Character> {
+    return this.http.get<Character>(
+      `${this.apiUrl}/characters/${id}?apikey=${this.apiKey}`
+    );
+  }
 }

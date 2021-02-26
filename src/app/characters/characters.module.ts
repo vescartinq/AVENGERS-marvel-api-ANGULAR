@@ -4,14 +4,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 
 import { CharactersRoutingModule } from './characters-routing.module';
-import { MaterialModule } from '../material/material.module';
+import { MaterialModule } from './../material/material.module';
 
-import { ListComponent } from './pages/list/list.component';
 import { CharacterCardComponent } from './components/character-card/character-card.component';
+import { DetailComponent } from './pages/detail/detail.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InsertComponent } from './pages/insert/insert.component';
+import { ListComponent } from './pages/list/list.component';
 import { SearchComponent } from './pages/search/search.component';
-import { DetailComponent } from './pages/detail/detail.component';
 
 @NgModule({
   declarations: [
