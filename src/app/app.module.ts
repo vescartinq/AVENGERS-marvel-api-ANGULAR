@@ -7,11 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { ListComponent } from './characters/pages/list/list.component';
-import { CharacterCardComponent } from './characters/components/character-card/character-card.component';
+import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 @NgModule({
-  declarations: [AppComponent, ListComponent, CharacterCardComponent],
+  declarations: [AppComponent, ErrorPageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

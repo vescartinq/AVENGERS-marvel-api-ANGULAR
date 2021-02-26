@@ -1,1 +1,33 @@
-<p>detail works!</p>
+<mat-grid-list cols="1" *ngIf="!character; else divCharacter">
+  <mat-grid-tile>
+    <mat-spinner></mat-spinner>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #divCharacter>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+    <div fxFlex="50">
+      <h1>
+        {{ character.name }}
+      </h1>
+      <mat-divider></mat-divider>
+      <br />
+
+      <img [src]="" />
+    </div>
+
+    <div fxFlex="50">
+      <h1>Details</h1>
+      <mat-divider></mat-divider>
+      <mat-list>
+        NAME: <b> {{ character.name }}</b>
+      </mat-list>
+      <mat-list>
+        {{ character.description }}
+      </mat-list>
+      <br />
+
+      <button mat-button color="warn" (click)="return()">Return</button>
+    </div>
+  </div>
+</ng-template>
